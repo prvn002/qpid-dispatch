@@ -141,7 +141,6 @@ jobs:
     env:
       - PROTON_VERSION=main BUILD_TYPE=RelWithDebInfo
       - DISPATCH_CMAKE_ARGS='-DRUNTIME_CHECK=asan -DCMAKE_C_FLAGS=-DQD_MEMORY_DEBUG -DQD_ENABLE_ASSERTIONS=ON -DDISPATCH_TEST_TIMEOUT=500'
-	 
   - name: "qdrouterd:Default Build"
     os: linux
     arch: s390x
